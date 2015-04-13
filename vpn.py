@@ -43,7 +43,7 @@ print vpc.state
 subnet = vpc_connection.create_subnet(vpc.id,'10.0.0.0/25')
 print subnet.state
 print subnet.available_ip_address_count
-ec2_conn = ec2.connect_to_region('us-east-1',aws_access_key_id='AKIAIORQIQAOE42JZKWQ',aws_secret_access_key='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')
+ec2_conn = ec2.connect_to_region('us-east-1',aws_access_key_id='',aws_secret_access_key='')
 
 web = create_security_group(ec2_conn,vpc.id,'abctalks1')
 #address = address.Address(connection=ec2_conn,instance_id=ec2_instance.instances[0].id)
